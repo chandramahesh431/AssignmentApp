@@ -4,7 +4,9 @@ import createSagaMiddleware from "redux-saga";
 import actionWatcher from "../actionWatcher";
 import { createLogger } from "redux-logger";
 
-const rootReducer = combineReducers({});
+import loginReducer from "./../reducers/loginReducer";
+
+const rootReducer = combineReducers({ loginReducer });
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 

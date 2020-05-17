@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./landingPage.css";
 
 class LandingPage extends Component {
   state = {};
